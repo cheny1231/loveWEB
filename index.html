@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+        <script src="resources/js/flipclock.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/flipclock.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>Lovestory</title>
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/resources/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/resources/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/resources/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/resources/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/resources/favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/resources/favicons/manifest.json">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+<!--                     <img src="resources/img/logo-heart.png" alt="Omnifood logo" class="logo">
+                    <img src="resources/img/logo-heart.png" alt="Omnifood logo" class="logo-black"> -->
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#form">爱情考试</a></li>
+                        <li><a href="#photos">照片墙</a></li>
+                        <li><a href="#cities">我们的故事</a></li>
+                        <li><a href="#plans">纪念日</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>你好，叶先生。<br>准备好拥抱陈女士了吗？</h1>
+                <a class="btn btn-full js--scroll-to-form" href="#">参加考试</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">复习一下</a>
+            </div>
+            
+        </header>
+        
+        <section class="section-form js--section-form" id="form">
+            <div class="row">
+                <h2>2019年春季第一次摸底考试</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="bday">陈女士的生日</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="bday" id="bday" placeholder="mm/dd/yyyy" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="mday">最重要的纪念日</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="mday" id="mday" placeholder="mm/dd/yyyy" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>陈女士吃不吃葱姜蒜?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="prefer" id="prefer">
+                                <option value="yes" selected>吃</option>
+                                <option value="no">不吃</option>
+                            </select>
+                        </div>
+                    </div>
+      <!--               <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>陈女士吃不吃葱姜蒜?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked> Yes, please
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>想对陈女士说的话</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" id="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="交卷!" id="checkForm">
+                        </div>
+                    </div>
+                    
+                </form>
+                
+            </div>
+        </section>
+        
+        <section class="section-meals js--section-photos" id="photos">
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/1-him.jpg" alt="Korean bibimbap with egg and vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/2-him.jpg" alt="Simple italian pizza with cherry tomatoes">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/3-him.jpg" alt="Chicken breast steak with vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/4-him.jpg" alt="Autumn pumpkin soup">
+                    </figure>
+                </li>
+            </ul>
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/5-her.jpg" alt="Paleo beef steak with vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/6-her.jpg" alt="Healthy baguette with egg and vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/7-her.jpg" alt="Burger with cheddar and bacon">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/8-her.jpg" alt="Granola with cherries and strawberries">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section-cities js--section-cities" id="cities">
+            <div class="row">
+                <h2>我们的故事在这里...</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/wuxi.jpg" alt="Wuxi">
+                    <h3>无锡</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-calendar icon-small"></i>
+                        2019/2/11-2/12
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        深夜海底捞
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-bookmarks icon-small"></i>
+                        奔现成功~
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section class="section-testimonials">
+            <div class="row">
+                <h2>寄叶先生的一封信</h2>
+            </div>
+            <div class="row">
+                    <blockquote>
+                        叶先生，你好~<br><br>
+                        我还清楚地记得那个晚上，我在你的声音里听到了怦然心动，然后一切都无法阻挡地开始了。<br><br>我本以为我已不再相信一见倾心的爱情，也不再相信所谓灵魂之间的吸引，可是这种感觉是什么？仿佛蓦然回首间，你卓然立在灯火阑珊处；又仿佛是金风玉露一相逢时，我已忘却人间无数。不，这些都不足以描述，可我却莫名知道你一定懂我说的是什么。<br><br>我本以为我已不再是一个痴情少女，可以在恋情里成熟稳重，游刃有余。可是你却像致命的毒药一般，在我的心里肆意蔓延，让我从睁眼到闭眼，乃至睡梦中都无法停止对你的思念。于是我成了一个粘人的小姑娘，一喜一怒都由你决定，一思一念都系于你身。请你原谅，在你面前，我又要开始重新修炼。<br><br>我本以为我已不再患得患失，可以给自己足够的安全感。可是遇到你之后，我那么紧张，那么小心翼翼，控制不住地将自己低到了尘埃里，还满心欢喜地开出一朵花儿来。给我一点时间，我也会努力长成一棵大树，与你并肩而立。<br><br>叶先生，我知道我有时任性，有时骄纵，有时不近人情。我正在努力地改正，希望你不要嫌弃。如果你发现我无理取闹，请一定要直言不讳，然后给我一点时间冷静下来。很多时候，我只是需要与自己和解。<br><br>叶先生，你是我偶然听闻铭感于心的歌唱，也是我惊鸿一瞥而后拥抱的芬芳。我承认已是一见难忘，你可愿与我并肩看夕阳？
+                        <cite><img src="resources/img/avatar.jpg" alt="My photo">你最可爱的陈女士</cite>
+                    </blockquote>
+            </div>
+        </section>
+        
+        
+        <section class="section-plans js--section-plans" id="plans">
+            <div class="row">
+                <h2>We have been in love for</h2>
+            </div>
+            <div class="row clock-row">
+                <div class="clock"></div>
+        
+                <script type="text/javascript">
+                    var clock;
+
+                    $('.clock-row').ready(function() {
+
+                        // Grab the current date
+                        var currentDate = new Date();
+
+                        // Set some date in the past. In this case, it's always been since Jan 1
+                        var pastDate  = new Date(2019,1,6,21,0,0);
+
+                        // Calculate the difference in seconds between the future and current date
+                        var diff = currentDate.getTime() / 1000 - pastDate.getTime() / 1000;
+
+                        // Instantiate a coutdown FlipClock
+                        clock = $('.clock').FlipClock(diff, {
+                            clockFace: 'DailyCounter'
+                        });
+                    });
+                </script>
+            </div>
+        </section>
+        
+        
+        
+        <footer>
+<!--             <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="row">
+                <p>
+                    Copyright &copy; 2019 by Yang Chen. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61026110-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+    </body>  
+    
+</html>
