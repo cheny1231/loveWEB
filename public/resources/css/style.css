@@ -148,7 +148,8 @@ a:active {
 /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
-input[type=submit] {
+input[type=submit], 
+button {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -160,7 +161,8 @@ input[type=submit] {
 
 .btn-full:link,
 .btn-full:visited,
-input[type=submit] {
+input[type=submit],
+button {
     background-color: #ff7675;
     border: 1px solid #ff7675;
     color: #fff;
@@ -553,6 +555,7 @@ cite img {
 
 input[type=text],
 input[type=email],
+input[type=date],
 select,
 textarea {
     width: 100%;

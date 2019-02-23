@@ -69,13 +69,13 @@
                 <h2>2019年春季第一次摸底考试</h2>
             </div>
             <div class="row">
-                <form method="post" action="#" class="contact-form">
+                <div class="contact-form">
                     <div class="row">
                         <div class="col span-1-of-3">
                             <label for="bday">陈女士的生日</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="text" name="bday" id="bday" placeholder="mm/dd/yyyy" required>
+                            <input type="date" name="bday" id="bday" placeholder="mm/dd/yyyy" required>
                         </div>
                     </div>
                     <div class="row">
@@ -83,7 +83,7 @@
                             <label for="mday">最重要的纪念日</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="text" name="mday" id="mday" placeholder="mm/dd/yyyy" required>
+                            <input type="date" name="mday" id="mday" placeholder="mm/dd/yyyy" required>
                         </div>
                     </div>
                     <div class="row">
@@ -110,7 +110,7 @@
                             <label>想对陈女士说的话</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <textarea name="message" id="message" placeholder="Your message"></textarea>
+                            <textarea name="message" id="message" placeholder="Your message" required></textarea>
                         </div>
                     </div>
                     <div class="row">
@@ -118,11 +118,11 @@
                             <label>&nbsp;</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="submit" value="交卷!" id="checkForm">
+                            <button class="btn btn-full" id="checkForm">交卷!</button>
                         </div>
                     </div>
                     
-                </form>
+                </div>
                 
             </div>
         </section>

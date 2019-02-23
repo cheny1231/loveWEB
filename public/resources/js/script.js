@@ -83,16 +83,43 @@ $(document).ready(function() {
     });
 
     /* Check form value */
-    $('checkForm').click(function() {
-        var bday = $('bday');
-        var mday = $('mday');
-        var prefer = $('prefer');
-        var message = $('message');
-
-        if (bday == '12/31/1994') {
-            bday.addClass('green-border');
+    $('#checkForm').click(function() {
+        console.log('checkForm');
+        var bday = $('#bday');
+        var mday = $('#mday');
+        var prefer = $('#prefer');
+        var message = $('#message');
+        // check bday
+        console.log(bday.val());
+        if (bday.val() == '1994-12-31') {
+            console.log("correct bday!");
+            bday.css("border-color", "#2ed573");
         } else {
-            bday.addClass('red-border');
+            bday.css("border-color", "#ff4757");
+        }
+
+        // check mday
+        if (mday.val() == '2019-02-06' || mday.val() == '2019-02-11') {
+            console.log("correct mday!");
+            mday.css("border-color", "#2ed573");
+        } else {
+            mday.css("border-color", "#ff4757");
+        }
+
+        // check prefer
+        if (prefer.val() == 'no') {
+            console.log("correct prefer!");
+            prefer.css("border-color", "#2ed573");
+        } else {
+            prefer.css("border-color", "#ff4757");
+        }
+
+        // check message
+        if (message.val() != "") {
+            console.log(message.val());
+            message.css("border-color", "#2ed573");
+        } else {
+            message.css("border-color", "#ff4757");
         }
     })
 
