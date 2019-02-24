@@ -89,6 +89,7 @@ $(document).ready(function() {
         var mday = $('#mday');
         var prefer = $('#prefer');
         var message = $('#message');
+        var success = 1;
         // check bday
         console.log(bday.val());
         if (bday.val() == '1994-12-31') {
@@ -96,6 +97,7 @@ $(document).ready(function() {
             bday.css("border-color", "#2ed573");
         } else {
             bday.css("border-color", "#ff4757");
+            success = 0;
         }
 
         // check mday
@@ -104,6 +106,7 @@ $(document).ready(function() {
             mday.css("border-color", "#2ed573");
         } else {
             mday.css("border-color", "#ff4757");
+            success = 0;
         }
 
         // check prefer
@@ -112,6 +115,7 @@ $(document).ready(function() {
             prefer.css("border-color", "#2ed573");
         } else {
             prefer.css("border-color", "#ff4757");
+            success = 0;
         }
 
         // check message
@@ -120,6 +124,12 @@ $(document).ready(function() {
             message.css("border-color", "#2ed573");
         } else {
             message.css("border-color", "#ff4757");
+            success = 0;
+        }
+
+        if (success == 1) {
+            $(".section-testimonials").removeClass("secret-section");
+            $(".congrats").removeClass("secret-section");
         }
     })
 

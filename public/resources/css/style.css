@@ -311,6 +311,10 @@ header {
     margin-bottom: 30px;
 }
 
+.congrats {
+    color: #ff6b81;
+}
+
 
 /* ----------------------------------------------- */
 /* MEALS */
@@ -476,6 +480,10 @@ cite img {
     border-radius: 50%;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+.secret-section {
+    display: none;
 }
 
 
